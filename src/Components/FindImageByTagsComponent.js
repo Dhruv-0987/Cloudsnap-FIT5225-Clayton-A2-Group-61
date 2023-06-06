@@ -8,11 +8,11 @@ function FindImageByTagsComponent() {
     const [displayMsg, setDisplayMsg] = useState(null)
 
     const handleTagsSubmit = () => {
+        console.log(tagsObject)
         CloudsnapApiService.findImagesByTags(tagsObject)
         .then((res) => {
             setReceivedImageUrls(res.data['S3_URLS'])
-
-            if (receivedImageUrls.length === 0){
+            if (res.data['S3_URLS'].length === 0){
                 setDisplayMsg("Sorry Image uploaded not clear enough or no similar images")
             }
         }).catch((err)=> {
