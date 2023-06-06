@@ -1,3 +1,11 @@
+# About Project
+
+The project leverages various AWS services such as Lambda, S3, API Gateway, and RDS to create a serverless application.
+The application utilizes YOLOv Tiny weights and models for image detection purposes.
+The project's APIs are integrated and can be used in a React frontend.
+The deployed version of the application can be accessed at the following link: https://fit5225.netlify.app/
+In summary, this project combines the power of AWS services, YOLOv Tiny models for image detection, and a React frontend to create a serverless application. The application's functionalities can be accessed through the provided link.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
