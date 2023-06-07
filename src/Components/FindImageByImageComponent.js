@@ -13,6 +13,7 @@ function FindImageByImageComponent() {
     };
 
     const handleImageSubmit = () => {
+        setDisplayMsg(null)
         CloudsnapApiService.findImagesByImage(selectedImage)
         .then((res) => {
             setReceivedImageUrls(res.data['S3_URLS'])

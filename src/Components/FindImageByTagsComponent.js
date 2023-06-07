@@ -9,6 +9,7 @@ function FindImageByTagsComponent() {
 
     const handleTagsSubmit = () => {
         console.log(tagsObject)
+        setDisplayMsg(null)
         CloudsnapApiService.findImagesByTags(tagsObject)
         .then((res) => {
             setReceivedImageUrls(res.data['S3_URLS'])
